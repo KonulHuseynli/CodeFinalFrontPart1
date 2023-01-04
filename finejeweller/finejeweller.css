@@ -1,0 +1,107 @@
+.FineJewellerPage {
+    height: 100vh;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior:smooth;
+  }
+  
+.FineJewellerPage::-webkit-scrollbar{
+    display:none;
+    position: fixed;
+    overflow: scroll;
+}
+.slider_images{
+    margin-left: 350px;
+}
+.fine {
+    position: relative;
+    z-index: 3;
+    background:#fff;
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+.fine__container {
+    padding: 0 30px;
+    margin: auto;
+}
+.fine__text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: uppercase;
+    color:#535353;
+}
+ /*   *************** *************************   COLLECTION   ***************************    */
+ .collection {
+    padding-top: 10px;
+}
+.collection__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.collection__item:nth-child(-n+3) {
+    border-top: 1px solid #D4D6D1;
+}
+.collection__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #D4D6D1;
+    border-bottom: 1px solid #D4D6D1;
+    padding-bottom: 35px;
+}
+.collection__img {
+    border-bottom: 1px solid #D4D6D1;
+    padding: 15px;
+    width: 100%;
+}
+@media (max-width: 1470px){
+.collection__img img {
+    height: 350px;
+}
+}
+.collection__img img {
+    width: 100%;
+
+    object-fit: cover;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.collection__name {
+    margin-top: 34px;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 49px;
+    color: #0D2A39;
+    padding: 0px 19px;
+    text-transform: uppercase;
+}
+.collection__desc {
+    margin-bottom: 31px;
+    color: #0D2A39;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px 19px;
+}
+.collection__view {
+    margin-top: auto;
+    text-transform: uppercase;
+}
+
+.line-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color:#0D2A39;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+}
