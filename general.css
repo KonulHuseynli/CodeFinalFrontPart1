@@ -52,3 +52,45 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
+/* RESPONSIVE NAV */
+
+.nav__container a i {
+  display: none;
+}
+  @media (max-width:1260px) 
+  {
+    .nav__container .nav_menu li a,.search-box svg{
+    display: none;
+    }
+  }
+@media (max-width: 1260px)
+{
+.nav__container  a  i{
+    display: inline-block;
+    margin-left: 21px;
+    color: black;
+}}
+
+
+@media (max-width: 1200px)
+{
+ .nav__container .nav_right {
+    width: unset;
+}
+}
+@media(max-width:600px)
+{
+.nav_logo{
+  margin-left: 9%;
+}
+}
+ /* @media (max-width:1260px){
+  .nav__container a i:hover {
+    color: white;
+    padding: 240px 160px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+ } */

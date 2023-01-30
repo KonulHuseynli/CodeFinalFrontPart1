@@ -1,3 +1,22 @@
+
+.videopart img{
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate3d(0px, -0.0004px, 0px);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    width: 100%;
+  }
+  .videopart{
+    min-height: 500px; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+      display: flex;
+  }
 .FineJewellerPage {
     height: 100vh;
     overflow-x: hidden;
@@ -5,14 +24,17 @@
 html{
     scroll-behavior:smooth;
   }
-  
-.FineJewellerPage::-webkit-scrollbar{
+/* .FineJewellerPage::-webkit-scrollbar{
     display:none;
     position: fixed;
     overflow: scroll;
-}
-.slider_images{
+} */
+.slider_images {
     margin-left: 350px;
+}
+.slider_images a{
+    font-size: 28px;
+    font-weight: 400;
 }
 .fine {
     position: relative;
@@ -105,3 +127,136 @@ img {
     line-height: 1.2;
     font-weight: 300;
 }
+
+
+@media (max-width: 1024px)
+{
+.fine {
+    padding-top: 5px;
+}}
+@media only screen and (max-width: 767px)
+{
+.fine {
+    padding-top: 10px;
+}}
+
+@media (max-width: 1200px)
+{
+.finejewellery {
+    padding: 45px 30px;
+    position: relative;
+}}
+@media (max-width: 1200px)
+{
+.finejewellery_info {
+    width: 100%;
+}}
+
+@media (max-width: 1200px)
+{
+.finejewellery_slider {
+    margin-bottom: 60px;
+    width: 100%;
+}}
+
+@media only screen and (max-width: 767px)
+{
+.finejewellery {
+    padding: 38px 30px;
+    text-align: center;
+}}
+@media only screen and (max-width: 767px)
+{
+.finejewellery_info {
+    padding-bottom: 30px;
+    padding-left: 0;
+}}
+
+@media only screen and (max-width: 767px)
+{
+.finejewellery__title {
+    margin-bottom: 15px;
+}
+}
+@media only screen and (max-width: 767px)
+{
+.finejewellery__title {
+    align-items: center;
+    padding-left: 150px;
+    font-size: 32px;
+}}
+
+@media only screen and (max-width: 767px)
+{ 
+    .slider_images {
+    height: 194px;
+    margin-left: 10%;
+
+}}
+
+@media only screen and (max-width: 767px)
+{
+    .slider_images div img {
+    height: 40px;
+    width: 10%;
+}}
+
+@media (max-width: 1200px)
+{
+.collection__list {
+    grid-template-columns: repeat(2,1fr);
+}}
+
+@media (max-width: 1200px)
+{
+.collection__item:nth-child(-n+2) {
+    border-top: 1px solid var(--greyCool);
+}}
+
+@media (max-width: 1470px)
+{
+.collection__img img {
+    height: 350px;
+}}
+@media (max-width: 1690px)
+{
+.collection__img img {
+    height: 400px;
+}}
+
+@media (max-width: 1200px)
+{
+.collection__item:nth-child(-n+3) {
+    border-top: unset;
+}}
+
+@media only screen and (max-width: 767px)
+{
+.collection__list {
+    grid-template-columns: 1fr;
+}}
+
+@media only screen and (max-width: 767px)
+{
+.collection__name {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}}
+@media only screen and (max-width: 767px)
+{
+.collection__desc {
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}}
+
+
+@media (max-width: 625px)
+{
+.line-button {
+    font-size: 16px;
+}}

@@ -6,3 +6,16 @@ function handle(delta) {
         scrollTop: $(window).scrollTop() - (distance * delta)
     }, time );
 }
+
+
+
+
+
+function myFunction() {
+  var x = document.getElementById("menu-links");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
